@@ -1,0 +1,110 @@
+<!-- Emily Smith
+WEB 115-003
+Final Project
+July 13, 2023-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WEB-115 Final Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <img src="banner.png" alt="Banner Photo">
+    <div class="header-content">
+      <h1>Perfectly Portioned Fitness</h1>
+    </div>
+  </header>
+
+  <form id="mealPlanForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="goal">Goal for the week:</label>
+    <textarea id="goal" rows="3"></textarea>
+
+    <h3>Meal Plan</h3>
+
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Breakfast</th>
+        <th>Snack 1</th>
+        <th>Lunch</th>
+        <th>Snack 2</th>
+        <th>Dinner</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td><input type="text" id="monday-breakfast"></td>
+        <td><input type="text" id="monday-snack1"></td>
+        <td><input type="text" id="monday-lunch"></td>
+        <td><input type="text" id="monday-snack2"></td>
+        <td><input type="text" id="monday-dinner"></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td><input type="text" id="tuesday-breakfast"></td>
+        <td><input type="text" id="tuesday-snack1"></td>
+        <td><input type="text" id="tuesday-lunch"></td>
+        <td><input type="text" id="tuesday-snack2"></td>
+        <td><input type="text" id="tuesday-dinner"></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td><input type="text" id="wednesday-breakfast"></td>
+        <td><input type="text" id="wednesday-snack1"></td>
+        <td><input type="text" id="wednesday-lunch"></td>
+        <td><input type="text" id="wednesday-snack2"></td>
+        <td><input type="text" id="wednesday-dinner"></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td><input type="text" id="thursday-breakfast"></td>
+        <td><input type="text" id="thursday-snack1"></td>
+        <td><input type="text" id="thursday-lunch"></td>
+        <td><input type="text" id="thursday-snack2"></td>
+        <td><input type="text" id="thursday-dinner"></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td><input type="text" id="friday-breakfast"></td>
+        <td><input type="text" id="friday-snack1"></td>
+        <td><input type="text" id="friday-lunch"></td>
+        <td><input type="text" id="friday-snack2"></td>
+        <td><input type="text" id="friday-dinner"></td>
+      </tr>
+      <tr>
+        <td>Saturday</td>
+        <td><input type="text" id="saturday-breakfast"></td>
+        <td><input type="text" id="saturday-snack1"></td>
+        <td><input type="text" id="saturday-lunch"></td>
+        <td><input type="text" id="saturday-snack2"></td>
+        <td><input type="text" id="saturday-dinner"></td>
+      </tr>
+      <tr>
+        <td>Sunday</td>
+        <td><input type="text" id="sunday-breakfast"></td>
+        <td><input type="text" id="sunday-snack1"></td>
+        <td><input type="text" id="sunday-lunch"></td>
+        <td><input type="text" id="sunday-snack2"></td>
+        <td><input type="text" id="sunday-dinner"></td>
+      </tr>
+    </table>
+
+    <div class="buttons">
+      <button type="button" onclick="generateMealPlan()">Generate Meal Plan</button>
+      <button type="reset">Clear</button>
+      <button type="button" onclick="printMealPlan()">Print/Download</button>
+    </div>
+  </form>
+
+  <script src="projectJS.js"></script>
+</body>
+</html>

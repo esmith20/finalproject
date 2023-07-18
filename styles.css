@@ -1,0 +1,47 @@
+/*Emily Smith
+WEB 115-003
+Final Project
+July 13, 2023 css file*/
+
+header {
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 5px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
